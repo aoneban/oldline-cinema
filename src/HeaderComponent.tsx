@@ -19,9 +19,6 @@ export default class Header extends React.Component<
     };
   }
 
-
-
-
   incrementCount = () => {
     this.setState((prevState) => ({
       count: prevState.count + 5,
@@ -34,16 +31,11 @@ export default class Header extends React.Component<
     }));
   };
 
-
-
-
   render() {
     return (
       <>
         <h1>Hello {this.props.type}</h1>
 
-
-        
         <p>You have {this.props.age} years</p>
         <p>{this.state.count}</p>
         <button onClick={this.incrementCount}>Click</button>
