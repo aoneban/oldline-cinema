@@ -35,7 +35,6 @@ export default class Header extends React.Component<
     return (
       <>
         <h1>Hello {this.props.type}</h1>
-
         <p>You have {this.props.age} years</p>
         <p>{this.state.count}</p>
         <button onClick={this.incrementCount}>Click</button>
